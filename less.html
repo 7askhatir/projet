@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Compter le nombre de mots d'une chaîne de caractères</title>
+    <style>
+      body{
+        background-color: cyan;
+      }
+    #ccc{
+      background-color: coral;
+      margin-left: 40%;
+      margin-top: 20%;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   
+  </head>
+  <body>
+    <textarea id="ccc"></textarea>
+    <button type="button">Compter les mots</button>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("button").click(function(){
+        var mots = $.trim($("#ccc").val());
+        alert(mots.length);
+      });
+    });
+  </script>
+</html>
